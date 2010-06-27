@@ -1,0 +1,17 @@
+I claim no responsibility of any kind to events using the code herein might result in, either as a direct or indirect consequence or effect, neither for its functionality. Support for the code will not be given. I claim no ownership of the code, and it is free to use. I claim no responsibility for such use.
+
+Files in this reporsitoty:
+============================================================================
+README
+This file
+
+client_relay_command.tar.gz
+libusrp/matlab integrating code for cooperative relaying
+
+This code gathers data from USRP1 device. For decoding a series of Matlab scripts are used, which loads the received data from files stored by a program that utilises "libusrp" to communicate with the USRP device. The master node of the network synchronizes the networks nodes transmission and reception of data via defined ethernet packages.
+
+implementation.tar.gz
+The code herein was developed in association with the thesis "USRP implementation strategies on USRP platform". It contains three different implementations of a QPSK BRRT. The first implementation utilizes the GNU Radio c++ programming framework, the second utilises "libusrp" to receive signals that are sub-sequentially decoded using IT++ while the third implementation also use "libusrp" to gather data and Matlab to decode the received data.
+
+usb_timer.tar.gz
+This file contains code to extract accurate timestamps from the USB controller. It was tested on UBUNTU 8.10.
